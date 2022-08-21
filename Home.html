@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Survivlasd Official Website</title>
+        <script>
+            // JavaScript code
+            function search_animal() {
+                let input = document.getElementById('searchbar').value
+                input=input.toLowerCase();
+                let x = document.getElementsByClassName('animals');
+    
+                for (i = 0; i < x.length; i++) {
+                    if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                        x[i].style.display="none";
+                    }
+                    else {
+                        x[i].style.display="list-item";
+                    }
+                }
+            }
+        </script>
+        <!-- linking the stylesheet(CSS) -->
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <style>
+            body {
+                background-image: url("Search Background.png");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-attachment: fixed;
+            }
+    
+            #searchbar {
+                font-family: Calibri, sans-serif;
+                float: bottom;
+            }
+    
+            .animals {
+                font-family: Calibri, sans-serif;
+            }
+    
+            #search {
+                float: none;
+                font-family: Calibri, sans-serif;
+            }
+    
+            a:hover {
+                background-color: rgb(4, 62, 253);
+            }
+    
+            a:active {
+                background-color: rgb(9, 255, 0);
+            }
+    
+            #searchbar:hover {
+                transform: scale(1.1)
+            }
+    
+            #Logo:hover {
+                transform: scale(1.1)
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Survivlasd Official</h1>
+        
+        <hr>
+
+        <h2>Contents</h2>
+        <!-- input tag -->
+        <input id="searchbar" onkeyup="search_animal()" type="text"
+        name="search" placeholder="Search website..">
+
+        <!-- ordered list of websites -->
+        <ol id='list'>
+            <a href="#What-is-Survivalasd"><li class="animals">What is Survivalasd?</li></a>
+            <a href="#How-to-add-questions-to-the-FAQ"><li class="animals">How to add questions to the FAQ?</li></a>
+
+        <h2 id="What-is-Survivalasd">What is Survivalasd?</h2>
+        <p>Survivlasd is a Multiplayer <a href="https://www.minecraft.net/en-us">Minecraft</a> server created with <a href="https://minehut.com/">Minehut</a>. The games avalible on Survivlasd are PVP, Creative, Survival, and Building Competetion.</p>
+        <h2 id="How-to-add-questions-to-the-FAQ">How to add questions to the FAQ?</h2>
+        <h2 id="FAQ">FAQ</h2>
+        <p>If you have any questions at all about Survivalasd then checkout our <a href="https://discord.gg/HQW73nXEr3">Survivalasd Questions</a> page. There we will try our best to answer all your questions.</p>
+        <h3>Contents</h3>
+        <ul>
+            <li></li>
+        </ul>
+        <p>Welcome to the FAQ. Here we will answer all your questions about Survivalasd.</p>
+    </body>
+</html>
